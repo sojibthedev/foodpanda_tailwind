@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Componants=== */
+@layer components{
+    .head{
+        @apply bg-white shadow-md h-16 flex items-center;
+    }
+    .head-main-content{
+        @apply container mx-auto flex justify-between lg:justify-normal overflow-hidden;
+    }
+    .headbtn{
+        @apply inline-block lg:hidden px-3 py-2 text-[#E21C70] text-lg hover:bg-[#FDF2F7] rounded-full duration-200;
+    }
+    .head_btn1{
+        @apply font-semibold text-sm border px-4 py-1  rounded-md transform relative hover:border-transparent before:absolute  before:ring-1 before:ring-[#E21C70] before:inset-0 before:rounded-md before:-z-10  hover:before:scale-110 before:duration-200;
+    }
+}
